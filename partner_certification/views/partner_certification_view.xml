@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!--Tree form-->
+    <record id="partner_certification_view" model="ir.ui.view">
+        <field name="name">Partner Certification</field>
+        <field name="model">partner.certification</field>
+        <field name="arch" type="xml">
+            <tree string="Partner Certification">
+                <field name="name"/>
+                <field name="type"/>
+                <field name="id_number"/>
+            </tree>
+        </field>
+    </record>
+    <!--Form view-->
+    <record id="partner_certification_form" model="ir.ui.view">
+        <field name="name">Partner Certification</field>
+        <field name="model">partner.certification</field>
+        <field name="arch" type="xml">
+            <form string="Partner Certification">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="type"/>
+                        <field name="id_number"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!--Action menu-->
+    <record id="partner_certification" model="ir.actions.act_window">
+        <field name="name">Partner Certification</field>
+        <field name="res_model">partner.certification</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Partner Certification" id="partner_certification_menu" sequence="5" action="partner_certification"/>
+
+
+</odoo>
