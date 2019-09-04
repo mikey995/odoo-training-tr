@@ -7,6 +7,8 @@
             <field name="category_id" position="after">
                 <field name="is_certification_body"/>
             </field>
+            <!--Certification List'i başka bir alana eklemek istiyoruz. Bundan dolayı xpath
+            kullanıyoruz. Başka sayfada sonra mı? Önce mi eklemek istediğimizi de position ile belirtiyoruz.-->
             <xpath expr="//page[@name='internal_notes']" position="after">
                 <page name ="certification" string="Certifications List">
                 <field name="certification_ids"/>

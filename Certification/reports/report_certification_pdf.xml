@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <report id="report_certification_pdf" name="Certification.certification_template_pdf"
+            model="certification" string="Certification Report" report_type="qweb-pdf"/>
+</odoo>
